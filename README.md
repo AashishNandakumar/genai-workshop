@@ -8,7 +8,7 @@ This repository contains the materials and code for the GenAI Workshop. This wor
 - [Installation](#installation)
 - [Setup](#setup)
   - [Windows](#windows)
-  - [Linux/MacOS](#linux/macos)
+  - [Linux/MacOS](#unix)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -44,7 +44,7 @@ To get started with the project, follow these steps:
 
    Ensure you have the necessary permissions to run batch files. You can run the batch file as an administrator by right-clicking on `setup.bat` and selecting "Run as administrator".
 
-### Linux/MacOS
+### Unix
 
 1. **Navigate to the project directory:**
 
