@@ -8,7 +8,7 @@ This repository contains the materials and code for the GenAI Workshop. This wor
 - [Installation](#installation)
 - [Setup](#setup)
   - [Windows](#windows)
-  - [Linux/MacOS](#linux-macos)
+  - [Linux/MacOS](#linux/macos)
 - [Contributing](#contributing)
 - [License](#license)
 
