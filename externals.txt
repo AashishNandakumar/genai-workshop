@@ -1,0 +1,56 @@
+// LINK TO LANGCHAIN V2.0 DOCUMENTATION 
+https://python.langchain.com/v0.2/docs/introduction/
+
+
+// DIFF B/W CHAT MODEL AND LLM N LANGCHAIN
+Chat models are often backed by LLMs but tuned specifically for having conversations. Crucially, their provider APIs use a different interface than pure text completion models. Instead of a single string, they take a list of chat messages as input and they return an AI message as output. See the section below for more details on what exactly a message consists of. GPT-4 and Anthropic's Claude-2 are both implemented as chat models.
+
+LLMs in LangChain refer to pure text completion models. The APIs they wrap take a string prompt as input and output a string completion. OpenAI's GPT-3 is implemented as an LLM.
+
+
+// TYPES OF MESSAGES IN LANG CHAIN
+HumanMessage
+This represents a message from the user. Generally consists only of content.
+
+AIMessage
+This represents a message from the model.
+
+SystemMessage
+This represents a system message, which tells the model how to behave. This generally only consists of content. Not every model supports this.
+
+FunctionMessage
+This represents the result of a function call. In addition to role and content, this message has a name parameter which conveys the name of the function that was called to produce this result.
+
+ToolMessage
+This represents the result of a tool call. This is distinct from a FunctionMessage in order to match OpenAI's function and tool message types. In addition to role and content, this message has a tool_call_id parameter which conveys the id of the call to the tool that was called to produce this result.
+
+
+// TEST CASES FOR SENTIMENT ANALYSIS
+Positive Sentiments
+Description 1
+"Yesterday was one of the best days of my life. I spent the entire day with my closest friends at the beach. We played volleyball, swam in the crystal-clear water, and enjoyed a picnic with delicious food. The weather was perfect, with a gentle breeze and warm sunshine. In the evening, we watched the sunset, which painted the sky in beautiful hues of orange and pink. It was a day filled with laughter, joy, and unforgettable memories."
+
+Description 2
+"Last week, I attended a workshop on creative writing. The instructor was incredibly knowledgeable and passionate, which made the sessions engaging and inspiring. I met some amazing people who shared my love for writing, and we quickly became friends. The exercises we did helped me discover new aspects of my creativity, and I left the workshop feeling motivated and excited to work on my own writing projects."
+
+Negative Sentiments
+Description 1
+"This month has been really tough for me. I lost my job due to company downsizing, and I've been struggling to find new employment. The constant rejection from job applications is disheartening, and it's taking a toll on my mental health. On top of that, my car broke down, and the repair costs are more than I can afford right now. I feel overwhelmed and stressed, not knowing how I'll manage to get through this difficult period."
+
+Description 2
+"Last night was horrible. I had an argument with my partner, and it escalated quickly. We both said things we didn't mean, and now there's a lot of tension between us. I couldn't sleep at all, and I feel exhausted and emotionally drained. The whole situation is making me anxious, and I don't know how to fix things. I'm afraid this might cause a lasting rift in our relationship."
+
+Neutral Sentiments
+Description 1
+"Today, I went through my usual routine. I woke up at 7 AM, had a quick breakfast, and headed to work. My day at the office was filled with meetings and emails, just like any other day. During lunch, I had a sandwich and chatted with a colleague about our weekend plans. After work, I went to the gym for a workout, then came home, had dinner, and watched a TV show before going to bed."
+
+Description 2
+"This morning, I attended a conference on digital marketing. The keynote speaker discussed the latest trends in the industry and how companies are adapting to changes in consumer behavior. The session was informative, but there wasn't anything particularly groundbreaking. After the conference, I grabbed a coffee from a nearby cafe and returned to my desk to catch up on work emails."
+
+
+// COHERE API KEY 
+https://dashboard.cohere.com/api-keys
+
+// GEMINI API KEY 
+https://ai.google.dev/gemini-api/docs/api-key
+https://aistudio.google.com/app/apikey
